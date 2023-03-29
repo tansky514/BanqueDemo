@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "314f7c92-36b6-4da0-bae0-2f2bdba1db02",
+		"name": "demo-banque",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18145970"
+	},
+	"item": [
+		{
+			"name": "Connection",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/login.php?courriel=esther@test.com&motdepasse=root",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"login.php"
+					],
+					"query": [
+						{
+							"key": "courriel",
+							"value": "esther@test.com"
+						},
+						{
+							"key": "motdepasse",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inscription",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/signup.php?pseudonyme=Esthy&courriel=esther@test.com&courriel2=esther@test.com&motdepasse=root&motdepasse2=root",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"signup.php"
+					],
+					"query": [
+						{
+							"key": "pseudonyme",
+							"value": "Esthy"
+						},
+						{
+							"key": "courriel",
+							"value": "esther@test.com"
+						},
+						{
+							"key": "courriel2",
+							"value": "esther@test.com"
+						},
+						{
+							"key": "motdepasse",
+							"value": "root"
+						},
+						{
+							"key": "motdepasse2",
+							"value": "root"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/otp.php?otp_code_client=1000",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"otp.php"
+					],
+					"query": [
+						{
+							"key": "otp_code_client",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/dashboard.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"dashboard.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listes de mes transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/transactions.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"transactions.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfert d'argent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/nouveau-transfert.php?courriel1=romanie@test.com&courriel2=romanie@test.com&montant=100&notes=",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"nouveau-transfert.php"
+					],
+					"query": [
+						{
+							"key": "courriel1",
+							"value": "romanie@test.com"
+						},
+						{
+							"key": "courriel2",
+							"value": "romanie@test.com"
+						},
+						{
+							"key": "montant",
+							"value": "100"
+						},
+						{
+							"key": "notes",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifier mes Informations personnelles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/Demo-Banque/src/server/modifier-informations-personelles.php?nom",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Demo-Banque",
+						"src",
+						"server",
+						"modifier-informations-personelles.php"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
